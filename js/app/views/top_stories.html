@@ -1,0 +1,9 @@
+<div ng-repeat='storyId in ctrl.cutIdsArr'>
+  <story id='storyId'></story>
+</div>
+<span>
+  <button id="prevPage" ng-if="ctrl.page >= 2" ng-click="ctrl.prevPage((ctrl.page*ctrl.perPage)-30)">PREVIOUS</button>
+</span>
+<span>
+  <button id="nextPage" ng-if="ctrl.maxPage > ctrl.page" ng-click="ctrl.nextPage((ctrl.page*ctrl.perPage)+30)">NEXT</button>
+</span>
