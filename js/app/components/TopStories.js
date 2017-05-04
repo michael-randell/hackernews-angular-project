@@ -12,7 +12,7 @@ var Story = {
   bindings: {
     id: '='
   },
-  controller: function(NewsIdsService, $scope){
+  controller: function(NewsIdsService, $scope, $state){
     var ctrl = this;
 
     $scope.getLinkUrl = function(id){
